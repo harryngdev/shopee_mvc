@@ -1,4 +1,4 @@
-<?php include './inc/header.php'; ?>
+<?php include 'inc/header.php'; ?>
 <?php
     if (!isset($_GET['productID']) || empty($_GET['productID'])) {
         echo "<script>window.location = 'index.php'</script>";
@@ -55,14 +55,14 @@
                                 $imageArr[$index] = $resultPdImage['productImage'];
                     ?>
                     <div class="briefing-slider-item">
-                        <img src="./admin/uploads/product/<?php echo $imageArr[$index++]; ?>" alt="image" />
+                        <img src="admin/uploads/product/<?php echo $imageArr[$index++]; ?>" alt="image" />
                     </div>
                     <?php } ?>
                 </div>
                 <div class="briefing-slider-nav">
                     <?php foreach ($imageArr as $value) { ?>
                     <div class="briefing-slider-item">
-                        <img src="./admin/uploads/product/<?php echo $value; ?>" alt="image" />
+                        <img src="admin/uploads/product/<?php echo $value; ?>" alt="image" />
                     </div>
                     <?php } ?>
                 </div>
@@ -215,7 +215,7 @@
                                     $getSimilarImage = $productImage->get_image_by_ID($resultSimilar['productID']);
                                     if ($getSimilarImage) {
                                 ?>
-                                <img src="./admin/uploads/product/<?php echo $getSimilarImage->fetch_assoc()['productImage']; ?>" alt="image" />
+                                <img src="admin/uploads/product/<?php echo $getSimilarImage->fetch_assoc()['productImage']; ?>" alt="image" />
                                 <?php } ?>
                             </div>
                             <div class="similar-item--detail">
@@ -238,4 +238,4 @@
         <?php } ?>
     </div>
 </div>
-<?php include './inc/footer.php'; ?>
+<?php include 'inc/footer.php'; ?>

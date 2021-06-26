@@ -21,7 +21,7 @@
                                     $getPdImage = $productImage->get_image_by_ID($resultProduct['productID']);
                                     if ($getPdImage) {
                                 ?>
-                                <img src="./admin/uploads/product/<?php echo $getPdImage->fetch_assoc()['productImage']; ?>" alt="image" />
+                                <img src="admin/uploads/product/<?php echo $getPdImage->fetch_assoc()['productImage']; ?>" alt="image" />
                                 <?php } ?>
                             </div>
                             <div class="main-item-link--detail">

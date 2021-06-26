@@ -1,4 +1,4 @@
-<?php include './inc/header.php'; ?>
+<?php include 'inc/header.php'; ?>
 <?php
 	$loginCheck = Session::get('customer_login');
 	if (!$loginCheck) {
@@ -19,36 +19,14 @@
         echo '<script type="text/javascript">alert("Xác nhận thành công");</script>';
     } elseif (isset($_GET['notice']) && $_GET['notice'] == 'false') {
         echo '<script type="text/javascript">alert("Xác nhận thành công");</script>';
-    } 
-    // elseif (isset($_GET['action']) && $_GET['action'] == 'false') {
-    //     echo '<script type="text/javascript">alert("Cập nhật không thành công");</script>';
-    //     echo '<meta http-equiv="refresh" content="0;URL=?id=live" />';
-    // } elseif (isset($_GET['action']) && $_GET['action'] == 'failed') {
-    //     echo '<script type="text/javascript">alert("Không thể cập nhật Avatar");</script>';
-    //     echo '<meta http-equiv="refresh" content="0;URL=?id=live" />';
-    // } elseif (isset($_GET['action']) && $_GET['action'] == 'oldpwfailed') {
-    //     echo '<script type="text/javascript">alert("Mật khẩu cũ không chính xác");</script>';
-    //     echo '<meta http-equiv="refresh" content="0;URL=?id=live" />';
-    // } elseif (isset($_GET['action']) && $_GET['action'] == 'cfpwfailed') {
-    //     echo '<script type="text/javascript">alert("Mật khẩu mới không trùng khớp");</script>';
-    //     echo '<meta http-equiv="refresh" content="0;URL=?id=live" />';
-    // } elseif (isset($_GET['action']) && $_GET['action'] == 'pwtrue') {
-    //     echo '<script type="text/javascript">alert("Thay đổi mật khẩu thành công");</script>';
-    //     echo '<meta http-equiv="refresh" content="0;URL=?id=live" />';
-    // } elseif (isset($_GET['action']) && $_GET['action'] == 'pwfailed') {
-    //     echo '<script type="text/javascript">alert("Thay đổi mật khẩu không thành công");</script>';
-    //     echo '<meta http-equiv="refresh" content="0;URL=?id=live" />';
-    // } elseif (isset($_GET['action']) && $_GET['action'] == 'emptyaddress') {
-    //     echo '<script type="text/javascript">alert("Vui lòng thêm địa chỉ");</script>';
-    //     echo '<meta http-equiv="refresh" content="0;URL=?id=live" />';
-    // }
+    }
 ?>
 <div id="user-page">
     <div class="container">
         <div class="user-page-wrapper">
             <div class="user-page-sidebar">
                 <div class="user-page-sidebar__brief">
-                    <a href="#" class="userpage-brief__avt"><img src="./admin/uploads/customer/<?php echo empty(Session::get('customer_image')) ? 'customer_avt.jpg' : Session::get('customer_image'); ?>" alt="avt" /></a>
+                    <a href="#" class="userpage-brief__avt"><img src="admin/uploads/customer/<?php echo empty(Session::get('customer_image')) ? 'customer_avt.jpg' : Session::get('customer_image'); ?>" alt="avt" /></a>
                     <div class="userpage-brief__right">
                         <h3><?php echo Session::get('customer_name'); ?></h3>
                         <span><i class="fas fa-pen"></i>Sửa Hồ Sơ</span>
@@ -93,4 +71,4 @@
         </div>
     </div>
 </div>
-<?php include './inc/footer.php'; ?>
+<?php include 'inc/footer.php'; ?>

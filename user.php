@@ -1,4 +1,4 @@
-<?php include './inc/header.php'; ?>
+<?php include 'inc/header.php'; ?>
 <?php
 	$loginCheck = Session::get('customer_login');
 	if (!$loginCheck) {
@@ -49,7 +49,7 @@
         <div class="user-page-wrapper">
             <div class="user-page-sidebar">
                 <div class="user-page-sidebar__brief">
-                    <a href="#" class="userpage-brief__avt"><img src="./admin/uploads/customer/<?php echo empty(Session::get('customer_image')) ? 'customer_avt.jpg' : Session::get('customer_image'); ?>" alt="avt" /></a>
+                    <a href="#" class="userpage-brief__avt"><img src="admin/uploads/customer/<?php echo empty(Session::get('customer_image')) ? 'customer_avt.jpg' : Session::get('customer_image'); ?>" alt="avt" /></a>
                     <div class="userpage-brief__right">
                         <h3><?php echo Session::get('customer_name'); ?></h3>
                         <span><i class="fas fa-pen"></i>Sửa Hồ Sơ</span>
@@ -128,7 +128,7 @@
                             <div class="my-account-profile__right">
                                 <div class="avatar-uploader">
                                     <div class="avatar-uploader__avatar">
-                                        <img src="./admin/uploads/customer/<?php echo empty(Session::get('customer_image')) ? 'customer_avt.jpg' : Session::get('customer_image'); ?>" alt="avt" />
+                                        <img src="admin/uploads/customer/<?php echo empty(Session::get('customer_image')) ? 'customer_avt.jpg' : Session::get('customer_image'); ?>" alt="avt" />
                                     </div>
                                     <div class="avatar-uploader__file-input">
                                         <input type="file" name="customerImage" id="" />
@@ -173,4 +173,4 @@
         </div>
     </div>
 </div>
-<?php include './inc/footer.php'; ?>
+<?php include 'inc/footer.php'; ?>

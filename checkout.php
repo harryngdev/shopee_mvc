@@ -1,4 +1,4 @@
-<?php include './inc/header.php'; ?>
+<?php include 'inc/header.php'; ?>
 <?php
     $loginCheck = Session::get('customer_login');
     if (!$loginCheck) {
@@ -70,7 +70,7 @@
                         <div class="product-item__details">
                             <div class="product-name">
                                 <div class="img-wrapper">
-                                    <img src="./admin/uploads/product/<?php echo $result['productImage']; ?>" alt="image" />
+                                    <img src="admin/uploads/product/<?php echo $result['productImage']; ?>" alt="image" />
                                 </div>
                                 <span><?php echo $result['productName']; ?></span>
                             </div>
@@ -111,4 +111,4 @@
         </div>
     </div>
 </div>
-<?php include './inc/footer.php'; ?>
+<?php include 'inc/footer.php'; ?>

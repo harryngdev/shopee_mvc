@@ -1,9 +1,9 @@
 <?php
-    include './lib/session.php';
+    include 'lib/session.php';
     Session::init();
 ?>
 <?php
-    include_once './classes/customer.php';
+    include_once 'classes/customer.php';
     $customer = new Customer();
 ?>
 <?php
@@ -42,8 +42,8 @@
         href="style/fontawesome-free-5.15.3-web/css/all.min.css" 
     />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" href="./style/reset.css" />
-    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="style/reset.css" />
+    <link rel="stylesheet" href="style/style.css" />
     <?php
         if (isset($_GET['action']) && $_GET['action'] == 'empty') {
             echo '<script type="text/javascript">alert("Không được để ô trống");</script>';

@@ -14,7 +14,7 @@
                         ?>
                         <li class="category-item">
                             <a href="pageproductbycat.php?categoryID=<?php echo $result['categoryID']; ?>">
-                                <img src="./admin/uploads/category/<?php echo $result['categoryImage']; ?>" alt="category" />
+                                <img src="admin/uploads/category/<?php echo $result['categoryImage']; ?>" alt="category" />
                                 <p><?php echo $result['categoryName']; ?></p>
                             </a>
                         </li>

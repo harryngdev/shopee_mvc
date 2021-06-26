@@ -9,7 +9,7 @@
                             while ($result = $getSlider->fetch_assoc()) {
                                 if ($result['sliderType'] == 'on') {
                     ?>
-                    <img src="./admin/uploads/slider/<?php echo $result['sliderImage']; ?>" alt="slider" /></li>
+                    <img src="admin/uploads/slider/<?php echo $result['sliderImage']; ?>" alt="slider" /></li>
                     <?php } } } ?>
                 </div>
                 <ul class="banners-list">

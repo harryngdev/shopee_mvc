@@ -1,4 +1,4 @@
-<?php include './inc/header.php'; ?>
+<?php include 'inc/header.php'; ?>
 <?php
     if (isset($_GET['page'])) {
         $get_page = $_GET['page'];
@@ -55,7 +55,7 @@
                                     $featheredImage = $productImage->get_image_by_ID($result['productID']);
                                     if ($featheredImage) {
                                 ?>
-                                <img src="./admin/uploads/product/<?php echo $featheredImage->fetch_assoc()['productImage']; ?>" alt="image" />
+                                <img src="admin/uploads/product/<?php echo $featheredImage->fetch_assoc()['productImage']; ?>" alt="image" />
                                 <?php } ?>
                             </div>
                             <div class="search-item-detail">
@@ -121,4 +121,4 @@
         </div>
     </div>
 </div>
-<?php include './inc/footer.php'; ?>
+<?php include 'inc/footer.php'; ?>

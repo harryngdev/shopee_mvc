@@ -1,16 +1,16 @@
 <?php
-    include './lib/session.php';
+    include 'lib/session.php';
     Session::init();
 ?>
 <?php
-    include_once './lib/database.php';
-    include_once './helpers/format.php';
-    include_once './classes/slider.php';
-    include_once './classes/category.php';
-    include_once './classes/product.php';
-    include_once './classes/productimage.php';
-    include_once './classes/cart.php';
-    include_once './classes/customer.php';
+    include_once 'lib/database.php';
+    include_once 'helpers/format.php';
+    include_once 'classes/slider.php';
+    include_once 'classes/category.php';
+    include_once 'classes/product.php';
+    include_once 'classes/productimage.php';
+    include_once 'classes/cart.php';
+    include_once 'classes/customer.php';
 
     $db = new Database();
     $fm = new Format();
@@ -47,8 +47,8 @@
         href="style/fontawesome-free-5.15.3-web/css/all.min.css" 
     />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" href="./style/reset.css" />
-    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="style/reset.css" />
+    <link rel="stylesheet" href="style/style.css" />
 </head>
 <body>
 <div class="wrapper">
@@ -87,7 +87,7 @@
                     <?php } else { ?>
                     <li class="user">
                         <a href="#" class="dropdown-toggle">
-                            <div class="user-avt"><img src="./admin/uploads/customer/<?php echo empty(Session::get('customer_image')) ? 'customer_avt.jpg' : Session::get('customer_image'); ?>" alt="avt" /></div>
+                            <div class="user-avt"><img src="admin/uploads/customer/<?php echo empty(Session::get('customer_image')) ? 'customer_avt.jpg' : Session::get('customer_image'); ?>" alt="avt" /></div>
                             <span><?php echo Session::get('customer_account'); ?></span>
                         </a>
                         <div class="dropdown-menu show">
@@ -128,7 +128,7 @@
                     <?php } else { ?>
                     <li class="user">
                         <a href="#" class="dropdown-toggle">
-                            <div class="user-avt"><img src="./admin/uploads/customer/<?php echo empty(Session::get('customer_image')) ? 'customer_avt.jpg' : Session::get('customer_image'); ?>" alt="avt" /></div>
+                            <div class="user-avt"><img src="admin/uploads/customer/<?php echo empty(Session::get('customer_image')) ? 'customer_avt.jpg' : Session::get('customer_image'); ?>" alt="avt" /></div>
                             <span><?php echo Session::get('customer_account'); ?></span>
                         </a>
                         <div class="dropdown-menu show">

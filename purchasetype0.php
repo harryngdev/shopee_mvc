@@ -23,7 +23,7 @@
                 <a href="pageproduct.php?productID=<?php echo $result['productID']; ?>">
                     <div class="details">
                         <div class="img-wrapper">
-                            <img src="./admin/uploads/product/<?php echo $result['productImage']; ?>" alt="img" />
+                            <img src="admin/uploads/product/<?php echo $result['productImage']; ?>" alt="img" />
                         </div>
                         <div class="details-inner">
                             <div class="name"><?php echo $result['productName']; ?></div>

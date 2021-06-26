@@ -23,7 +23,7 @@
                                         $bestSellerImage = $productImage->get_image_by_ID($result['productID']);
                                         if ($bestSellerImage) {
                                     ?>
-                                    <img src="./admin/uploads/product/<?php echo $bestSellerImage->fetch_assoc()['productImage']; ?>" alt="image" />
+                                    <img src="admin/uploads/product/<?php echo $bestSellerImage->fetch_assoc()['productImage']; ?>" alt="image" />
                                     <?php } ?>
                                 </div>    
                                 <p>₫<?php echo number_format($result['productPrice']); ?></p>
@@ -55,7 +55,7 @@
                                         $featheredImage = $productImage->get_image_by_ID($result['productID']);
                                         if ($featheredImage) {
                                     ?>
-                                    <img src="./admin/uploads/product/<?php echo $featheredImage->fetch_assoc()['productImage']; ?>" alt="image" />
+                                    <img src="admin/uploads/product/<?php echo $featheredImage->fetch_assoc()['productImage']; ?>" alt="image" />
                                     <?php } ?>
                                 </div>
                                 <p><?php echo $result['productName']; ?></p>

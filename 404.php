@@ -1,4 +1,4 @@
-<?php include './inc/header.php'; ?>
+<?php include 'inc/header.php'; ?>
 <div id="page-search">
     <div class="container">
         <div class="page-search-inner">
@@ -43,7 +43,7 @@
                                     $image = $productImage->get_image_by_ID($result['productID']);
                                     if ($image) {
                                 ?>
-                                <img src="./admin/uploads/product/<?php echo $image->fetch_assoc()['productImage']; ?>" alt="image" />
+                                <img src="admin/uploads/product/<?php echo $image->fetch_assoc()['productImage']; ?>" alt="image" />
                                 <?php } ?>
                             </div>
                             <div class="search-item-detail">
@@ -70,4 +70,4 @@
         </div>
     </div>
 </div>
-<?php include './inc/footer.php'; ?>
+<?php include 'inc/footer.php'; ?>

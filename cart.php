@@ -1,4 +1,4 @@
-<?php include './inc/header.php'; ?>
+<?php include 'inc/header.php'; ?>
 <?php
     if (isset($_GET['cartID'])) {
         $cartID = $_GET['cartID'];
@@ -67,7 +67,7 @@
                             <div class="cart-item__content">
                                 <div class="cart-item__cell-overview">
                                     <a href="pageproduct.php?productID=<?php echo $result['productID']; ?>" title="<?php echo $result['productName']; ?>">
-                                        <div class="cart-item__cell-overview--image"><img src="./admin/uploads/product/<?php echo $result['productImage']; ?>" alt="image" /></div>
+                                        <div class="cart-item__cell-overview--image"><img src="admin/uploads/product/<?php echo $result['productImage']; ?>" alt="image" /></div>
                                         <p><?php echo $result['productName']; ?></p>
                                     </a>
                                 </div>
@@ -118,4 +118,4 @@
         </div>
     </div>
 </div>
-<?php include './inc/footer.php'; ?>
+<?php include 'inc/footer.php'; ?>
